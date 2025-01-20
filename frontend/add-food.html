@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Food Item - Food Tracker</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="./dashboard.html" class="logo">Food Tracker</a>
+        <div class="nav-links">
+            <a href="./index.html">Logout</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1>Add New Food Item</h1>
+        </header>
+
+        <form id="add-food-form">
+            <label for="name">Food Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="quantity">Quantity</label>
+            <input type="number" id="quantity" name="quantity" required min="0">
+
+            <label for="expiryDate">Expiry Date</label>
+            <input type="date" id="expiryDate" name="expiryDate" required>
+
+            <label for="storageLocation">Storage Location</label>
+            <input type="text" id="storageLocation" name="storageLocation" required>
+
+            <button type="submit">Add Food Item</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Food Tracker. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

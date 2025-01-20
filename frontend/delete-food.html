@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Food Item - Food Tracker</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="./dashboard.html" class="logo">Food Tracker</a>
+        <div class="nav-links">
+            <a href="./index.html">Logout</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1>Delete Food Item</h1>
+        </header>
+
+        <!-- Food Items Table -->
+        <div id="foodItemsList">
+            <h2>Your Food Items</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Food Name</th>
+                        <th>Quantity</th>
+                        <th>Expiry Date</th>
+                        <th>Storage Location</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="foodItemsTableBody">
+                    <!--Food items (inserted dynamically)-->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer>
+        <p>&copy; 2025 Food Tracker. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

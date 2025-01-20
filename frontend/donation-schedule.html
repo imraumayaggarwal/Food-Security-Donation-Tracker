@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule Food Donation</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header class="navbar">
+        <a href="./dashboard.html" class="logo">Food Tracker</a>
+        <nav class="nav-links">
+            <a href="./index.html">Logout</a>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Schedule Food Donation</h1>
+        <form id="donation-form">
+            <label for="foodSelect">Select Food Items</label>
+            <select id="foodSelect" multiple>
+                <!-- Food items (inserted dynamilcally) -->
+            </select>
+
+            <label for="donationDate">Donation Date</label>
+            <input type="date" id="donationDate" required>
+
+            <button type="submit">Schedule Donation</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Food Tracker. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Tracking - Food Tracker</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="./dashboard.html" class="logo">Food Tracker</a>
+        <div class="nav-links">
+            <a href="./index.html">Logout</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1>Food Tracking</h1>
+        </header>
+
+        <div class="food-tracking-sections">
+            <!-- Food Items Added -->
+            <section id="food-added">
+                <h2>Food Items Added</h2>
+                <table id="food-items-added">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Quantity</th>
+                            <th>Expiry Date</th>
+                            <th>Storage Location</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Food items will be dynamically populated here -->
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Food Items Scheduled for Donation -->
+            <section id="food-scheduled-for-donation">
+                <h2>Food Items Scheduled for Donation</h2>
+                <table id="food-items-scheduled">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Quantity</th>
+                            <th>Expiry Date</th>
+                            <th>Storage Location</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Scheduled food items will be dynamically populated here -->
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Expired Food Items -->
+            <section id="expired-food-items">
+                <h2>Expired Food Items</h2>
+                <table id="expired-items-list">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Quantity</th>
+                            <th>Expiry Date</th>
+                            <th>Storage Location</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Expired food items will be dynamically populated here -->
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Food Tracker. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

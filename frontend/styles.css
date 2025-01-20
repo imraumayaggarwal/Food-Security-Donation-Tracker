@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 15px 30px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.navbar .logo {
+    font-size: 2rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-links a {
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #28a745;
+}
+
+/* Main Content */
+main {
+    margin-top: 80px; 
+    text-align: center;
+    flex-grow: 1; 
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+table td {
+    background-color: #fff;
+    color: #333;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Dashboard Options */
+.dashboard-options {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.dashboard-options h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.dashboard-options ul {
+    list-style: none;
+    padding: 0;
+}
+
+.dashboard-options li {
+    margin-bottom: 20px; /* Increased spacing between buttons */
+}
+
+.dashboard-options li a {
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    color: #fff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block; 
+    width: 200px; 
+    text-align: center; 
+    transition: background-color 0.3s ease;
+}
+
+.dashboard-options li a:hover {
+    background-color: #218838;
+}
+
+/* Main Buttons */
+button {
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    color: #fff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Form Styles */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 1);
+}
+
+/* Additional Styling for Add Food Page */
+.container {
+    margin-top: 100px;
+    padding: 30px;
+    text-align: center;
+    overflow-x: auto;  /* To make the table scrollable if needed */
+}
+
+.container header h1 {
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Ensure spacing between header and sections */
+.container header h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 30px; /* Add sufficient space below */
+}
+
+/* Adding margin to sections to separate them from the header */
+.food-tracking-sections section {
+    margin-top: 20px;
+}
+
+/* Optional: Ensure headings are clear */
+.food-tracking-sections h2 {
+    font-size: 1.6rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Container for delete page */
+#foodItemsList {
+    margin-top: 50px;
+}
+
+#foodItemsList h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.food-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.food-item.expired {
+    background-color: #f8d7da; /* Light red background for expired food */
+    border-color: #f5c6cb; /* Red border */
+}
+
+.food-item h3 {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.food-item p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.labelone {
+    display: inline-block;
+    margin-left: 100px;
+    border-width: 0.001px;
+    border-color: #ccc;
+    border-style: solid;
+    padding: 50px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 35px;
+    transition: box-shadow 0.5s;
+}
+
+.labelone:hover{
+    background-color: rgb(245, 242, 240);
+    box-shadow: 0px 7px 25px rgba(0, 0, 0, 0.2);
+    border-width: 0px;
+}
+
+#two {
+    padding-right: 65px;
+    padding-left: 65px;
+}
+
+#three {
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+#four {
+    padding-left: 77px;
+    padding-right: 77px;
+}
